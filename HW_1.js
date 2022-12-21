@@ -85,14 +85,15 @@ console.log('Задание 2.1: ' + print_array(result));
 element.innerText = print_array(result);
 
 /* Задание №2b */
+custom_string = 'likes',
 custom_function = (array) =>
 {result = [];
  for (item = 0; item < array.length; item++)
  {object = array[item];
-  result.push(object.name + ' ' + Object.keys(object)[1] + ' ' + object.likes)}
+  result.push(object.name + ' ' + custom_string + ' ' + object.likes)}
  return result},
 element = document.getElementById('2b'),
-result = custom_function(custom_array);
+result = custom_function(custom_array, custom_string);
     
 console.log('Задание 2.2: ' + print_array(result));
 element.innerText = print_array(result);
