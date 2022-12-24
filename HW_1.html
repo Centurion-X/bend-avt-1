@@ -6,6 +6,9 @@
     <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = yes">
     <script defer src = "HW_1.js"></script>
+    <style>
+        pre {white-space: pre-wrap}
+    </style>
     <title>Homework №1</title>
 </head>
 
@@ -14,7 +17,7 @@
 <h2>Домашняя работа №1</h2>
 
 <h4>Задание №0</h4>
-<pre>Напишите функцию, которая принимает на вход строку, а возвращает длину этой строки:<br>
+<pre>Реализовать функцию, которая принимает на вход строку, а возвращает длину этой строки:<br>
 'Я - строка !' -> 12
 <br>P.S. С практики (для закрепления навыков по работе со стрелочными функциями).</pre>
 <pre><u>Ответ</u>:<br><code>
@@ -25,7 +28,7 @@ const custom_string = 'Я - строка !',
 <div>Результат:&nbsp;<samp id = '0'></samp></div>
 
 <h4>Задание №1</h4>
-<pre>Напишите функцию, которая принимает на вход массив строк, а возвращает только те из них, что короче 20 символов:<br>
+<pre>Реализовать функцию, которая принимает на вход массив строк, а возвращает только те из них, что короче 20 символов:<br>
 [
     'Я короткая строка',
     'Я вроде бы тоже короткая строка',
@@ -54,7 +57,7 @@ const custom_function = (array, limit) =>
 <div>Результат:&nbsp;<samp id = '1b'></samp></div>
 
 <h4>Задание №2</h4>
-<pre>Напишите функцию, которая принимает на вход следующие данные:<br>
+<pre>Реализовать функцию, которая принимает на вход следующие данные:<br>
 [
     { name: 'shark', likes: 'ocean' },
     { name: 'turtle', likes: 'pond' },
@@ -73,18 +76,19 @@ const custom_array = [{ name: 'shark', likes: 'ocean' },
 </code></pre>
 <div>Результат:&nbsp;<samp id = '2a'></samp></div>
 <pre><u>Альтернатива</u>:<br><code>
-const custom_function = (array) =>
+const custom_string = 'likes',
+      custom_function = (array) =>
       {result = [];
        for (item = 0; item &lt; array.length; item++)
        {object = array[item];
-        result.push(object.name + ' ' + Object.keys(object)[1] + ' ' + object.likes)}
+        result.push(object.name + ' ' + custom_string + ' ' + object.likes)}
        return result},
-      result = custom_function (custom_array);
+      result = custom_function (custom_array, custom_string);
 </code></pre>
 <div>Результат:&nbsp;<samp id = '2b'></samp></div>
 
 <h4>Задание №3</h4>
-<pre>Напишите функцию, которая принимает на вход два объекта, а возвращает один с общими свойствами:<br>
+<pre>Реализовать функцию, которая принимает на вход два объекта, а возвращает один с общими свойствами:<br>
 { name: 'Алиса' }, { age: 11 } -> { name: 'Алиса', age: 11 }
 <br>P.S. Оператор spread |...|.</pre>
 <pre><u>Ответ</u>:<br><code>
@@ -105,7 +109,7 @@ const object_one = { name: 'Александра' },
 <div>Результат:&nbsp;<samp id = '3b'></samp></div>
 
 <h4>Задание №4</h4>
-<pre>Напишите функцию, которая возвращает наименьшее значение из массива:<br>
+<pre>Реализовать функцию, которая возвращает наименьшее значение из массива:<br>
 [1,2,3,4] -> 1
 <br>P.S. Метод Math.min() и оператор spread |...|.</pre>
 <pre><u>Ответ</u>:<br><code>
@@ -117,7 +121,7 @@ const custom_array = [1,2,3,4],
 <div>Результат:&nbsp;<samp id = '4'></samp></div>
 
 <h4>Задание №5</h4>
-<pre>Напишите функцию, которая возвращает нечетные значения из массива:<br>
+<pre>Реализовать функцию, которая возвращает нечетные значения из массива:<br>
 [1,2,3,4] -> [1,3]
 <br>P.S. Метод .reduce().</pre>
 <pre><u>Ответ</u>:<br><code>
@@ -129,7 +133,7 @@ const custom_array = [1,2,3,4],
 <div>Результат:&nbsp;<samp id = '5'></samp></div>
 
 <h4>Задание №6</h4>
-<pre>Напишите функцию, которая принимает на вход данные из корзины в следующем виде:<br>
+<pre>Реализовать функцию, которая принимает на вход данные из корзины в следующем виде:<br>
 [
     { price: 10, count: 2 },
     { price: 100, count: 1 },
@@ -202,7 +206,7 @@ const object = {'401': 'Ошибка авторизации',
 <div>Результат:&nbsp;<samp id = '8'></samp></div>
 
 <h4>Задание №9</h4>
-<pre>Напишите функцию, которая возвращает 2 наименьших значения массива:<br>
+<pre>Реализовать функцию, которая возвращает 2 наименьших значения массива:<br>
 [4,3,2,1] -> [1,2]
 <br>P.S. Методы .sort() и .slice().</pre>
 <pre><u>Ответ</u>:<br><code>
