@@ -9,12 +9,22 @@ var items = document.getElementsByClassName('item'),
     item_count;
 
 /* Обработчики событий */
+/* Константы и Переменные */
+const add_button = document.getElementById('add-button'),
+      load_button = document.getElementById('load-button'),
+      rem_button = document.getElementById('rem-button'),
+      save_button = document.getElementById('save-button'),
+      u_list = document.getElementById('list');
+
+var items = document.getElementsByClassName('item'),
+    item_count;
+
+/* Обработчики событий */
 add_button.addEventListener('click', function add_item()
 {
     const input = document.querySelector('input.console');
-    let item_value = input.value;
-    if (item_value == '' && add_button.textContent == 'Добавить') item_value = 'Задача №' + (item_count + 1)
-    else if (!item_value.trim())
+    if (input.value == '' && add_button.textContent == 'Добавить') input.value = 'Задача №' + (item_count+1)
+    else if (!input.value.trim())
     {
         alert ('Введите описание для задачи!')
         return;
@@ -23,7 +33,7 @@ add_button.addEventListener('click', function add_item()
     item.classList.add('item');
     item.setAttribute('draggable', true);
     item.innerHTML = `<input class = "checkbox" type = "radio">
-                      <span> ${item_value} </span>
+                      <span> ${input.value} </span>
                       <button class = "x-button" type = "button">X</button>`;
     const items = u_list.querySelectorAll('input:checked');
     if (items.length != 0)
@@ -35,7 +45,7 @@ add_button.addEventListener('click', function add_item()
             {
                 let span = item.nextElementSibling;
                 span.classList.toggle('crossed');
-                span.innerHTML = `<span>&nbsp;${item_value}</span>`;
+                span.innerHTML = `<span>&nbsp;${input.value}</span>`;
             }
             else
             {
@@ -80,7 +90,7 @@ rem_button.addEventListener('click', function remove_item()
         alert ('Вcе задачи уже удалены из списка!');
         return;
     };
-    let items = document.querySelectorAll('span.crossed');
+    const items = document.querySelectorAll('span.crossed');
     if (items.length == 0)
     {
         alert ('Вычеркните задачу для удаления из списка!');
