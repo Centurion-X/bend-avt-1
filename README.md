@@ -13,6 +13,13 @@ Home Works
  Homework №2
  -----------
  
- -> HW_2.html
+-> HW_2.html
 
 -> HW_2.js
+
+ Practice ToDo
+ -------------
+ 
+-> ToDo.html
+
+-> ToDo.js
