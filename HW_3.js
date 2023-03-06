@@ -252,7 +252,7 @@ button.onclick = function ()
     let amount = prompt ('Сколько роботов нужно добавить на арену (максимум 6)?\nВведите число: ', 1);
         amount = Number(amount);
     if (isNaN(amount)) amount = 1
-    else if (amount > 6) amount = 6;
+    else if (amount > 6) amount = 6
     else if (amount < 1) amount = 1;
     const arena = new Arena(amount);
 }
