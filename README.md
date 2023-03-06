@@ -23,3 +23,16 @@ Home Works
 -> ToDo.html
 
 -> ToDo.js
+
+ Homework №3
+ -----------
+ 
+-> HW_3.html
+
+-> HW_3.css
+
+-> HW_3.js
+
+-> fonts/DotGothic16-Regular.ttf
+-> images/side1.png
+-> images/side2.png
