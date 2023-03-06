@@ -42,7 +42,8 @@ class Arena
         }
         else
         {
-            if (this.decepticon.health > 0) bubble.textContent = texts.boast
+            if (this.decepticon.health > 0)
+                bubble.textContent = texts.boast
             else
             {
                 bubble.textContent = texts.victory;
