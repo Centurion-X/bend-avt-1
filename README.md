@@ -33,6 +33,6 @@ Home Works
 
 -> HW_3.js
 
--> fonts/DotGothic16-Regular.ttf
--> images/side1.png
--> images/side2.png
+-> fonts/DotGothic16-Regular.ttf;
+ images/side1.png;
+ images/side2.png
