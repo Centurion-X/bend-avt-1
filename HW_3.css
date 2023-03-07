@@ -89,6 +89,7 @@ div#log
     max-height: 12rem; min-height: 2rem;
     overflow-y: scroll;
     padding: 0.25rem;
+    text-align: justify;
 }
 div#menu
 {
@@ -106,6 +107,10 @@ div.side
 div#side-one
 {
     border-right: 1px solid rgb(243, 184, 64);
+}
+div#side-two
+{
+    align-content: flex-start;
 }
 div#side-one .bot
 {
